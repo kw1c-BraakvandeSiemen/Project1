@@ -1,0 +1,113 @@
+/*
+Auteur: <Siemen van de Braak>
+Aanmaakdatum <28-10-2021>
+
+css van de cookie pop up
+
+*/
+
+/* spreekt alles aan */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font inladen */
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: PlayFair Display;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+/* cookie melding uiterlijk en positie opaak */
+.wrapper
+{
+    position: absolute;
+    bottom: -250px;
+    left: 470px;
+    background-color: #ffffff;
+    max-width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px 25px 30px 25px;
+}
+
+/* verbergt cookie */
+.wrapper.hide
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* afbeelding stylen */
+.cookieMelding
+{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* maximale breedte opgeven */
+.wrapper .cookieMelding
+{
+    max-width: 90px;
+}
+
+/* inhoud tekst verplaatsen */
+.wrapper .content
+{
+    margin-top: 10px;
+}
+/* inhoud tekst verplaatsen van de head tekst */
+.content .cookie_head
+{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* de paragraaf van de cookie aanspreken */
+.cookie_head ~ p
+{
+    color: rgb(141, 137, 137);
+    margin-top: 5px 0 20px 0;
+    font-size: 15px;
+    text-align: center;
+    margin-left: -10px;
+}
+
+/* button plaatsen */
+.content .buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie_head
+{
+    font-family: openSans;
+}
+
+/* opmaak van de button */
+.item
+{
+    padding: 10px 20px;
+    background: #d6d1d17e;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ca9b52;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,155 @@
+/*
+Auteur: <Siemen van de Braak>
+Aanmaakdatum <12-10-2021>
+
+css van de homepage/layout
+
+*/
+
+/* navigatie balk */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* font inladen */
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: PlayFair Display;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+/* achtergrond afbeelding inladen en positioneren */
+body
+{
+    background-color: #ffffff;
+    background-image: url(../images/achtergrondWebsite2.0.png);
+    background-size: contain;
+    background-position: center;
+    display: block;
+    margin: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* positioneren alle inhoud */
+#mainContentDiv
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+
+}
+
+/* positioneren van linkerkant (de salon) */
+#leftContentDiv
+{
+    float: left;
+    margin-right: auto;
+    height: auto;
+    width: 70%;
+    margin-top: 5%;
+}
+
+/* positioneren rechterkant (instagram) */
+#rightContentDiv
+{
+    float: right;
+    margin-left: auto;
+    height: auto; 
+    width: 30%;
+    margin-top: 15%;
+}
+
+
+/* navigatiebalk achtergrondkleur hoogte en zorgt dat alles gecentered staat  */
+nav
+{
+    font-family: openSans;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #d6d1d17e;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.144);
+}
+
+/* past in de navigatie balk aan hoe het gedisplayed word en hoeveel de tekst uit elkaar staat*/
+.navigatieLinks
+{
+    display: flex;
+    justify-content: space-around;
+    width: 37%;
+}
+
+/* haalt de puntjes weg voor de linkjes*/
+.navigatieLinks li
+{
+    list-style: none;
+}
+
+/* font size en kleur tekst in navigatie balk*/
+.navigatieLinks a
+{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* zorgt ervoor dat als je over een linkje gaat met je muis dat deze een kleur krijgt*/
+.navigatieLinks a:hover
+{
+    color: #ca9b52;
+}
+
+/* zorgt ervoor dat de huidige pagina een kleurtje krijgt in de navigatie balk*/
+.navigatieLinks a.huidigePagina
+{
+    color: #ca9b52;
+}
+
+/* in het midden plaatsen*/
+h1
+{
+    font-family: PlayFair Display;
+    text-align: center;
+}
+
+/* tekst in het midden plaatsen en iets naar onder*/
+p
+{
+    font-family: openSans;
+    display: block;
+    padding: 30px;
+    margin-top: 30px;
+    padding-top: 1px;
+}
+
+/* logo in het midden zetten */
+.logoMain
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*zorgt ervoor dat de text minder over de website worde verplaatst*/
+figcaption
+{
+    font-family: openSans;
+    display: block;
+    width: 500px;
+    padding: 30px;
+}
+
+/* Gemaakt door Siemen aangepast door Timo */

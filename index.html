@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- 
+    Auteur:         <Siemen van de Braak>
+    Aanmaakdatum:   <12-10-2021>
+
+    <praktijk project homepage>
+-->
+<html>
+    <head>
+        
+        <!-- Opgeven van een title -->
+        <title>
+            homepage 
+        </title>
+        <!-- Tekenset declareren -->
+        <meta charset="utf-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- inladen externe css layout -->
+        <link href="stylesheet/homepage_layout.css" rel="stylesheet">
+        <!-- inladen externe css voor cookie pop up-->
+        <link href="stylesheet/style_cookie.css" rel="stylesheet">
+        <!-- inladen javascript -->
+        <script src="./scripts/script_homepage.js" defer></script>
+    </head>
+    <body>
+        <!-- inladen afbeelding YourHair-->
+        <header>
+            <img src="images/yourhair.jpg" width="700" height="250" alt="Logo" class="logoMain">
+        </header>
+        <!-- dit is de navigatie balk boven in de pagina-->
+
+        <nav>
+            <ul class="navigatieLinks">
+                <li><a class="huidigePagina" href="./index.html">Home</a></li>
+                <li><a href="./pages/prijslijst.html">Prijslijst</a></li>
+                <li><a href="./pages/about_me.html">Over mij</a></li>
+                <li><a href="./pages/reviews.html">Reviews</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- alle content een id geven zodat het verplaats kan worden in css-->
+        <div id="mainContentDiv">
+            <div id="leftContentDiv">
+                <h1>
+                    De Salon
+                </h1>
+                <p>
+                    Even een moment voor jezelf, of dat nu is voor kleuren, knippen, highlights, balayage of advies, hier ben je altijd welkom! <br> Bij your hair creëren we een fijne ontspannen sfeer en luister ik naar jouw wensen zodat we de beste resultaten krijgen. Hiervoor gebruik ik de fijne producten van Trinity haircare. <br> Trinity is dierproef vrij en heeft voor elk haar type de juiste producten. Persoonlijk contact daar sta ik voor daarom is mijn motto ook time for you and Your Hair.    
+                </p>
+                <!-- inladen afbeeldingen slideshow -->
+                <div class="slidershow middle">
+                    <div class="slides">
+                        <input type="radio" name="r" id="r1" checked>
+                        <input type="radio" name="r" id="r2">
+                        <input type="radio" name="r" id="r3">
+                        <input type="radio" name="r" id="r4">
+                        <input type="radio" name="r" id="r5">
+                        <input type="radio" name="r" id="r6">
+                        <input type="radio" name="r" id="r7">
+                        <div class="slide s1">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/interieur1.jpg" alt="interieur1">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/interieur2.jpg" alt="interieur2">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/producten1.png" alt="Producten1">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/producten 2.jpg" alt="Producten2">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/knippen.png" alt="KnipWide">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/knip.png" alt="KnipCloseUp">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/afbeeldingenHomePage/1600x1067/DemiCorstjens.png" alt="Demi_Corstjens">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dit is voor de bars onder de fotos aan te spreken-->
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                    <label for="r6" class="bar"></label>
+                    <label for="r7" class="bar"></label>
+                </div>
+            </div>
+            <!-- iframe inladen en div geven om te positioneren via css-->
+            <div id="rightContentDiv">
+                <p>
+                    <iframe width="200" height="550" src="https://www.instagram.com/p/COcqF3op3-O/embed" frameborder="0"></iframe>
+                </p>
+
+            </div>
+        </div>
+        <!-- cookie melding -->
+        <div class="wrapper">
+            <img src="./images/cookiemelding/cookiemelding_koekje.png" alt="cookie" class="cookieMelding">
+            <div class="content">
+                <header class="cookie_head">
+                    Cookies Consent
+                </header>
+                <p>
+                    Deze website maakt gebuik van cookies <br> om ervoor te zorgen dat u de beste <br> ervaring krijgt op onze website
+                </p>
+                <!-- knopje van accepteren cookie melding-->
+                <div class="buttons">
+                    <button class="item">
+                        Ik begrijp het
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

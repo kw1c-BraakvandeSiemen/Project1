@@ -1,0 +1,94 @@
+/*
+Auteur: <Timo Corstjens>
+Aanmaakdatum <02-11-2021>
+
+Titel
+
+*/
+
+/* navigatie balk */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* font inladen */
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: PlayFair Display;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+/* voeg font nog ff toe */
+/* navigatiebalk achtergrondkleur hoogte en zorgt dat alles gecentered staat  */
+nav
+{
+    font-family: openSans;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #d9dbd98e;
+}
+
+/* past in de navigatie balk aan hoe het gedisplayed word en hoeveel de tekst uit elkaar staat*/
+.navigatieLinks
+{
+    display: flex;
+    justify-content: space-around;
+    width: 37%;
+}
+
+/* haalt de puntjes weg voor de linkjes*/
+.navigatieLinks li
+{
+    list-style: none;
+}
+
+/* font size en kleur tekst in navigatie balk*/
+.navigatieLinks a
+{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* zorgt ervoor dat als je over een linkje gaat met je muis dat deze een kleur krijgt*/
+.navigatieLinks a:hover
+{
+    color: #ca9b52;
+}
+
+/* zorgt ervoor dat de huidige pagina een kleurtje krijgt in de navigatie balk*/
+.navigatieLinks a.huidigePagina
+{
+    color: #ca9b52;
+}
+
+
+/* fontgeven aan h1/2 en aan de ul en p die leeftijd weergeeft*/
+h1
+{
+    font-family: PlayFair Display;
+}
+
+h2
+{
+    font-family: PlayFair Display;
+}
+
+ul
+{
+    font-family: openSans;
+}
+
+p
+{
+    font-family: openSans;
+}
